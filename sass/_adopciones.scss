@@ -1,0 +1,293 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    header {
+        display: grid;
+        padding: 1em;
+        margin: 0px;
+        grid-template-columns: 1fr;
+        font-size: large;
+        min-width: 100vh;
+        background-color: #000C66;
+    
+    .imagen{  
+            
+            h1 {
+            color: white;
+            text-align: center;
+            padding: 1em;
+            font-size: 1em;
+        }
+        img {
+            position: absolute;
+        }
+    }
+}
+    .adoption {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    
+
+    .adotionuno {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        margin: 10px;
+
+        img {
+            display: flex;
+            width: 250px;
+            height: 250px;
+            margin: 10px;
+        }
+
+        h2 {
+            display: flex;
+            padding: 50px;
+            margin: 10px;
+        }
+    }
+
+    .adotiondos {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+
+        img {
+            width: 250px;
+            height: 250px;
+            margin: 10px;
+        }
+
+        h2 {
+            padding: 50px;
+            margin: 10px;
+        }
+}   
+}
+
+    footer {
+        padding: 3em;
+        background-color: #000c66;
+        margin-bottom: 0;
+        margin-top: 1.5em;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    .imagen {
+        grid-area: imagen;
+    }
+
+    .adotionuno {
+        grid-area: adopuno;
+    }
+
+    .adotiondos {
+        grid-area: adopdos;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    body {
+        background-color: azure;
+        margin-bottom: 1em;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "imagen"
+            "adopuno"
+            "adopdos"
+            "footer";
+    }
+
+@media (min-width:650px) {
+    body {
+        background-color: azure;
+        margin-bottom: 1.5em;
+        display: grid;
+        justify-content: center;
+        grid-template-areas:
+            'header'
+            'imagen'
+            'adopuno'
+            'adopdos'
+            'footer';
+    }
+
+    header {
+        display: flex;
+        padding: 34px;
+        margin: 0px;
+        flex-direction: column;
+        font-size: large;
+        min-width: 100vh;
+        background-color: #000C66;
+    }
+
+    .imagen {
+        display: flex;
+
+        h1 {
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 1em;
+            font-size: 2.8em;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        img {
+            position: relative;
+        }
+    }
+
+    .adoption {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 10px;
+
+        .adotionuno {
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            margin: 2%;
+        
+        img {
+            width: 250px;
+            height: 250px;
+            margin: 10px;
+        }
+
+        h2 {
+            padding: 50px;
+        }
+}
+        .adotiondos {
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            margin: 2%;
+
+
+        img {
+            width: 250px;
+            height: 250px;
+            margin: 10px;
+        }
+
+        h2 {
+            padding: 50px;
+        }
+    }
+}
+
+@media (min-width:991px) {
+
+    body {
+        background-color: azure;
+        margin-bottom: 1.5em;
+        display: grid;
+        justify-content: center;
+        grid-template-areas:
+            'header'
+            'nav'
+            'h1'
+            'adopuno'
+            'adopdos'
+            'footer';
+    }
+
+    header {
+        display: flex;
+        padding: 34px;
+        margin: 0px;
+        flex-direction: column;
+        font-size: large;
+        min-width: 100vh;
+        background-color: #000C66;
+    
+
+    .imagen{  
+        display: flex;
+            h1 {
+                color: white;
+                text-align: center;
+                padding: 10px;
+                margin: 1em;
+                font-size: 3.5em;
+                flex-direction: column;
+            }
+            img {
+                position: relative;
+            }
+        }
+}
+
+    .adoption {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin: 10px;
+    
+
+    .adotionuno {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        margin: 2%;
+    }
+
+    .adotionuno {
+        img {
+        width: 250px;
+        height: 250px;
+        margin: 10px;
+}   
+    h2{
+        padding: 50px;
+    }  
+}
+
+    .adotiondos {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        margin: 2%;
+    
+
+    img {
+        width: 250px;
+        height: 250px;
+        margin: 10px;
+    }
+
+    h2 {
+        padding: 50px;
+    }
+}
+}
+
+    footer {
+        padding: 3em;
+        background-color: #000c66;
+        margin-bottom: 0;
+        margin-top: 1.5em; 
+    }
